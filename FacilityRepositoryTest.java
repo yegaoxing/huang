@@ -1,5 +1,5 @@
 package jp.co.ginga.infra.repository.facility;
-
+//77888
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
