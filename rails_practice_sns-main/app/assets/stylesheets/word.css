@@ -1,0 +1,113 @@
+.words-heading {
+    font-weight: 300;
+    margin: 60px 0 20px;
+    font-size: 48px;
+    color: #bcc8d4;
+  }
+  
+  .words-index-item {
+    padding: 20px 30px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    display: table;
+    width: 100%;
+  }
+  
+  .wordr-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    box-shadow: 0 2px 6px #c1ced7;
+    object-fit: cover;
+  }
+  
+  .word-name a {
+    font-weight: 600;
+  }
+  
+  .word-name a:hover {
+    color: #3ecdc6;
+  }
+  
+  .word-left {
+    float: left;
+    width: 10%;
+  }
+  
+  .word-right {
+    width: 90%;
+    padding-left: 25px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .word-show {
+    text-align: center;
+  }
+  
+  .word {
+    margin-bottom: 20px;
+  }
+  
+  .word img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+    box-shadow: 0 2px 6px #c1ced7;
+    margin: 20px 0 10px;
+    object-fit: cover;
+  }
+  
+  .word h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .word p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .word a {
+    color: #8899a6;
+    text-decoration: underline;
+    font-weight: 200;
+  }
+  
+  .word span {
+    color: #afb6bf;
+    font-weight: 200;
+    padding: 0 6px 0 8px;
+  }
+  
+  .word-tabs {
+    margin-top: 40px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+  }
+  
+  .word-tabs li {
+    float: left;
+  }
+  
+  .word-tabs li.active {
+    border-bottom: 2px solid #3ecdc6;
+  }
+  
+  .word-tabs li.active a {
+    color: #57575f;
+  }
+  
+  .word-tabs a {
+    display: inline-block;
+    padding: 16px 30px;
+    color: #afb6bf;
+  }
+  
+  .words-form input {
+    margin-bottom: 15px;
+  }

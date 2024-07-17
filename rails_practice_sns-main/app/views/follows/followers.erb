@@ -1,0 +1,20 @@
+<div class="main follows-index">
+    <div class="container">
+        <h1 class="follows-heading">フォロワー一覧</h1>
+        <% @follower_users.each do |follower_user_ids| %>
+            <div class="follows-index-item">
+
+                <div class="user-left">
+                    <img src="<%= "/user_images/#{follower_user_ids.image_name}" %>">
+                </div>
+
+                <div class="follow-right">
+                    <%= link_to(follower_user_ids.name, "/users/#{follower_user_ids.id}") %>
+                </div>
+                
+            </div>
+        <% end %>
+
+    </div>
+
+</div>

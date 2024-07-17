@@ -1,0 +1,20 @@
+<div class="main words-new">
+  <div class="container">
+    <h1 class="form-heading">単語登録</h1>
+    <%= form_with url: "/words/#{@word.id}", local: true, method: :post do |form| %>
+      <div class="form">
+      <div class="form-body">
+        <% @word.errors.full_messages.each do |message|%>
+          <div class = "form-error">
+            <%= message %>
+          </div>
+        <% end %>
+        <p>単語</p>
+        <textarea name="word"><%= @word.word %></textarea>
+        <p>読み</p>
+        <textarea name="reading"><%= @word.reading %></textarea>
+        <input type="submit" value="新規登録">
+      </div>
+    <% end %>
+  </div>
+</div>
