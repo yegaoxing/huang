@@ -1,0 +1,17 @@
+<div class="main follows-index">
+  <div class="container">
+    <h1 class="follows-heading">フォロー一覧</h1>
+    <% @follow_users.each do |follow_user_ids|  %>
+      <div class="follows-index-item">
+
+        <div class="user-left">
+          <img src="<%= "/user_images/#{follow_user_ids.image_name}" %>">
+        </div>
+
+        <div class="follow-right">
+          <%= link_to(follow_user_ids.name, "/users/#{follow_user_ids.id}") %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div

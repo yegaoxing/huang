@@ -1,0 +1,14 @@
+
+<div class="main words-index">
+  <div class="container">
+    <h1 class="words-heading">単語一覧</h1>
+    <% @words.each do |word|  %>
+      <div class="words-index-item">
+        <%= link_to(word.word, "/words/#{word.id}") %>
+        <div class="word-right">
+          <%= word.reading%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="main words-show">
+  <div class="container">
+    <div class="words-index-item">
+      <p>
+        <%= @word.word %>
+        <%= @word.reading %>
+      </p>
+
+      <div class="word-time">
+        <%= @word.created_at %>
+      </div>
+
+      <% if @word.user_id == @current_user.id %>
+        <div class="post-menus">
+          <%= button_to("編集", "/words/#{@word.id}/edit",{method: "get",class: "button"}) %>
+          <%= button_to("削除", "/words/#{@word.id}", {method: "delete", class: "button"}) %>
+        </div>
+      <%end%>
+
+    </div>
+  </div>
+</div>
